@@ -348,6 +348,10 @@ input:checked + .toggle-slider:before {
         .backcground-r{
         padding: 30px 0 0 30px;
     }
+    .intro-contact{
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -436,11 +440,28 @@ input:checked + .toggle-slider:before {
     padding: 20px 35px;
   }
   .skills-r{
-    padding: 10px 0 0 35px;
+    flex-wrap: wrap;
+    padding: 20px 20px 5px 35px;
     flex-wrap: wrap;
     gap: 20px;
   }
  
+}
+
+.resume{
+    padding: 50px 50px;
+}
+@media(max-width:536px){
+    .resume{
+        padding: 50px 35px;
+    }
+}
+.resume h2{
+    display: block;
+    text-align: left;
+    padding: 30px 50pxpx;
+    font-size: 1.2rem;
+    color: var(--main-text-color);
 }
 
 /* starts of featured project*/
@@ -476,7 +497,11 @@ input:checked + .toggle-slider:before {
     width: 150px;
     padding: 0 0 0 20px;
 }
-
+.project_caption p{
+   font-size: .9rem;
+   line-height: 1.5;
+   text-align: left;
+}
 @media(max-width:924px){
     .featured-project{
         padding: 50px;
@@ -527,10 +552,10 @@ input:checked + .toggle-slider:before {
         width: 115%;
     }
     .project_pic{
-        width: 100%;
+        width: 106%;
     }
     .project_caption{
-        width: 100%;
+        width: 106%;
     }
 
 }
@@ -582,7 +607,7 @@ input:checked + .toggle-slider:before {
     line-height: 1.5;
     position: relative;
 }
-.project-name a:after{
+.project-name a:after, .resume h2:after{
     position: absolute;
     content: '';
     background: url('images/arrow.png');
@@ -652,17 +677,3 @@ input:checked + .toggle-slider:before {
 .other-projects-l{
     width: 90%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
