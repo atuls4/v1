@@ -290,6 +290,7 @@ input:checked + .toggle-slider:before {
     font-size: 2rem;
   }
   .intro-contact{
+    padding:0 10px 0 0;
     flex-wrap: wrap;
     font-size: 1rem;
     font-weight: 500;
